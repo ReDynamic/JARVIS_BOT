@@ -181,7 +181,7 @@ def start(bot: Bot, update: Update, args: List[str]):
 
     else:
         update.effective_message.reply_text("╔═════════════════╗\n       「 HEY, I AM ALIVE 」\n╚═════════════════╝",reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="⚡ UPDATE CHANNEL ⚡",url="t.me/JARVIS_SECURITY_BOT?start=help".format(bot.username))]]))
+                                                [[InlineKeyboardButton(text="⚡ UPDATE CHANNEL ⚡",url="https://t.me/ReDynamicUpdate".format(bot.username))]]))
 
 
 def send_start(bot, update):
