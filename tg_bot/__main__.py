@@ -50,9 +50,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-**🅷🅴🅻🅻🅾️ {}, ᴍʏ ɴᴀᴍᴇ ɪs *{}*!\n 
+**𝙷𝙴𝙻𝙻𝙾 {}, ᴍʏ ɴᴀᴍᴇ ɪs *{}*!\n 
 ᴘᴇᴏᴘʟᴇ's sᴏᴍᴇᴛɪᴍᴇ ғɪɴᴅ *ʜᴀʀᴅ* ᴛᴏ ᴍᴀɴᴀɢᴇ ᴛʜᴇɪʀ ɢʀᴏᴜᴘs, *sᴏ ɪ ᴀᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ*.\n
-[ᴍʏ Mⱥຮteℝ🔥](t.me/shrvan42).
+[𝙼𝚈 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙶𝚁𝙾𝚄𝙿 ☘︎](https://t.me/ReDynamicSupport).
  
 ʏᴏᴜ ᴄᴀɴ ғɪɴᴅ ᴛʜᴇ ʟɪsᴛ ᴏғ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs ᴡɪᴛʜ /help.
 """
@@ -64,7 +64,7 @@ HELP_STRINGS = """
  ➥ /help <ᴍᴏᴅᴜʟᴇ ɴᴀᴍᴇ>: ᴘᴍ's ʏᴏᴜ ɪɴғᴏ ᴀʙᴏᴜᴛ ᴛʜᴀᴛ ᴍᴏᴅᴜʟᴇ.
 {}
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ᴇɪᴛʜᴇʀ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ / ᴏʀ !.\n")
-TECHNO_IMG = "https://telegra.ph/file/ad2934de00779c4a59db3.jpg"
+TECHNO_IMG = "https://telegra.ph/file/822a15a0bf0bfb6ed5bd5.jpg"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -163,25 +163,25 @@ def start(bot: Bot, update: Update, args: List[str]):
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="ADD ME 🤖TO YOUR GROUP",url="t.me/{}?startgroup=true".format(bot.username))
+                            text="➕ 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕",url="t.me/{}?startgroup=true".format(bot.username))
                     ],
                      [
                          InlineKeyboardButton(
-                             text="👻 HELP 👻",
+                             text="𝐇𝐄𝐋𝐏 ❓",
                             callback_data="help_back".format(bot.username)),
                          InlineKeyboardButton(
-                             text="UPDATES 🔀",
-                             url="https://t.me/tg_coders_updates")
+                             text="ℹ️ 𝐔𝐏𝐃𝐀𝐓𝐄 𝐂𝐇𝐀𝐍𝐍𝐄𝐋",
+                             url="https://t.me/ReDynamicUpdate")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="💻 MY CREATOR 💻",
-                             url="t.me/tg_x_coders")
+                             text="𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𖧷",
+                             url="https://t.me/ReDynamicSupport")
                      ]]))
 
     else:
-        update.effective_message.reply_text("╔═════════════════╗\n       「 🔥 𝗢𝗣 𝘽𝙊𝙏 🔥 」\n╚═════════════════╝",reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="🖤 ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍᴇ ʜᴇʟᴘ 🖤",url="t.me/JARVIS_SECURITY_BOT?start=help".format(bot.username))]]))
+        update.effective_message.reply_text("╔═════════════════╗\n       「 HEY, I AM ALIVE 」\n╚═════════════════╝",reply_markup=InlineKeyboardMarkup(
+                                                [[InlineKeyboardButton(text="⚡ UPDATE CHANNEL ⚡",url="t.me/JARVIS_SECURITY_BOT?start=help".format(bot.username))]]))
 
 
 def send_start(bot, update):
@@ -508,10 +508,10 @@ def source(bot: Bot, update: Update):
         try:
             bot.send_message(user.id, SOURCE_STRING, parse_mode=ParseMode.MARKDOWN)
 
-            update.effective_message.reply_text("sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 🔥",reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ᴘᴍ",url="t.me/timepass_Assistant_bot")]]))
+            update.effective_message.reply_text("☯︎ 𝚂𝚞𝚙𝚙𝚘𝚛𝚝",reply_markup=InlineKeyboardMarkup(
+                                                [[InlineKeyboardButton(text="Jᴏɪɴ Hᴇʀᴇ",url="https://t.me/ReDynamicSupport")]]))
         except Unauthorized:
-            update.effective_message.reply_text("ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ɪɴ ᴘᴍ ғɪʀsᴛ ᴛᴏ ɢᴇᴛ sᴏᴜʀᴄᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ.")
+            update.effective_message.reply_text("🎵 YOU CAN JOIN THE GROUP AND TALK WITH ADMIN AND YOU ALSO CAN LISTEN MUSIC 🎵.")
 
 
 
