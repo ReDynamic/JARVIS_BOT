@@ -119,7 +119,7 @@ def demote(bot: Bot, update: Update, args: List[str]) -> str:
                               can_restrict_members=False,
                               can_pin_messages=False,
                               can_promote_members=False)
-        message.reply_text(tld(chat.id, f"*Black Legend* Has Successfully Demoted This Rude Guy In *{chatD.title}*!"), parse_mode=ParseMode.MARKDOWN)
+        message.reply_text(tld(chat.id, f"*ReDynamic* Has Successfully Demoted This Rude Guy In *{chatD.title}*!"), parse_mode=ParseMode.MARKDOWN)
         return f"<b>{html.escape(chatD.title)}:</b>" \
                 "\n#DEMOTED" \
                f"\n<b>Admin:</b> {mention_html(user.id, user.first_name)}" \
@@ -324,8 +324,8 @@ def adminlist(bot: Bot, update: Update):
         if user.username:
             name = name = escape_markdown("@" + user.username)
         if status == "creator":
-            text += "\n✪ *CREATOR* ✪"
-            text += "\n`✔︎ `{} \n\n✪ *ADMINISTRATORS* ✪".format(name)
+            text += "\n🔅 *CREATOR* 🔅"
+            text += "\n`✔︎ `{} \n\n❗ *ADMINISTRATORS* ❗".format(name)
     for admin in administrators:
         user = admin.user
         status = admin.status
@@ -336,8 +336,8 @@ def adminlist(bot: Bot, update: Update):
             name = escape_markdown("@" + user.username)
             
         if status == "administrator":
-            text += "\n`🔰 `{}".format(name)
-            members = "\n\n✪ *TOTAL MEMBERS* ✪\n`♓‍ `There Are *{}* Ghost In This Group".format(count)
+            text += "\n`- `{}".format(name)
+            members = "\n\n👤 *TOTAL MEMBERS* 👤\n`👀 `There Are *{}* Ghost In This Group".format(count)
             
     msg.reply_text(text + members, parse_mode=ParseMode.MARKDOWN)
 
