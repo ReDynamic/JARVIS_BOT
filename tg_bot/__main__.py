@@ -282,8 +282,8 @@ def get_help(bot: Bot, update: Update):
 
         update.effective_message.reply_text("ʜᴇʏᴀ, ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ɪɴ ᴘᴍ ᴛᴏ ɢᴇᴛ ᴛʜᴇ ʟɪsᴛ ᴏғ ᴛʜᴇ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs.",
                                             reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="🖤 ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍᴇ ʜᴇʟᴘ 🖤",url="t.me/Timepass_Assistant_bot?start=help".format(bot.username))],
-                                                [InlineKeyboardButton(text="🔀 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 🔀",url="https://t.me/devilbotSUPPORT")]]))
+                                                [[InlineKeyboardButton(text="❗ ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍᴇ ʜᴇʟᴘ ❗",url="t.me/ReDynamicBot?start=help".format(bot.username))],
+                                                [InlineKeyboardButton(text="🚀 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 🚀",url="https://t.me/ReDynamicSupport")]]))
                                                 
         
 
