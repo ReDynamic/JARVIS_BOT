@@ -79,7 +79,7 @@ def get_id(bot: Bot, update: Update, args: List[str]):
                            parse_mode=ParseMode.HTML)
 
         else:
-            msg.reply_text(f"🆔 <b>CuRrenT GrOuP ID:</b> <code>{chat.id}</code>.",
+            msg.reply_text(f"❔ <b>This group's id is:</b> <code>{chat.id}</code>.",
                            parse_mode=ParseMode.HTML)
 
 
@@ -115,20 +115,20 @@ def info(bot: Bot, update: Update, args: List[str]):
         return
  
     
-    text = (f"<b>➖➖➖➖➖➖➖➖➖➖\n「 User Info」 ℹ\n➖➖➖➖➖➖➖➖➖➖\n</b>\n"
-            f"🆔️ ID ☞ <code>{user.id}</code>\n\n"
-            f"✔️ <b>First Name</b> ☞ <code>{html.escape(user.first_name)}</code>")
+    text = (f"<b>➖➖➖\n「 User Info」 ❗\n➖➖➖\n</b>\n"
+            f"⭐ ID ☞ <code>{user.id}</code>\n\n"
+            f"⁉️ <b>First Name</b> ☞ <code>{html.escape(user.first_name)}</code>")
 
     if user.last_name:
-        text += f"\n✔️ <b>Last Name</b> ☞ <code>{html.escape(user.last_name)}</code>"
+        text += f"\n👤 <b>Last Name</b> 🔆 <code>{html.escape(user.last_name)}</code>"
 
     if user.username:
-        text += f"\n✔️ <b>Username</b> ☞ @{html.escape(user.username)}"
+        text += f"\n🔎 <b>Username</b> 👤 @{html.escape(user.username)}"
 
-    text += f"\n✔️ <b>User Link</b> ☞ {mention_html(user.id, 'link')}"
+    text += f"\n👀 <b>User Link</b> ⁉️ {mention_html(user.id, 'link')}"
 
     num_chats = sql.get_user_num_chats(user.id)
-    text += f"\n\n✔️ <b>Chat Count</b> ☞ <code>{num_chats}</code>"
+    text += f"\n\n❗ <b>Chat Count</b> ➕ <code>{num_chats}</code>"
 
     try:
         user_member = chat.get_member(user.id)
@@ -144,19 +144,19 @@ def info(bot: Bot, update: Update, args: List[str]):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n🔰The Disaster level of this person is 'Hero'."
+        text += "\n❗The Disaster level of this person is 'Hero'."
         disaster_level_present = True
     elif user.id in DEV_USERS:
         text += "\n💠This member is one of 'Legend'."
         disaster_level_present = True
     elif user.id in SUDO_USERS:
-        text += "\n♓The Disaster level of this person is 'Dragon'."
+        text += "\n⁉️The Disaster level of this person is 'Dragon'."
         disaster_level_present = True
     elif user.id in SUPPORT_USERS:
         text += "\n🌟The Disaster level of this person is 'HACKER'."
         disaster_level_present = True
     elif user.id in TIGER_USERS:
-        text += "\n💓The Disaster level of this person is 'Tiger'."
+        text += "\n🚀The Disaster level of this person is 'Tiger'."
         disaster_level_present = True
     elif user.id in WHITELIST_USERS:
         text += "\n⚡The Disaster level of this person is 'Wolf'."
