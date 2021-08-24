@@ -13,12 +13,12 @@ from urllib.request import urlopen
 SFW_STRINGS = (
     
     "🧼 WASH YOUR HANDS FREQUENTLY",
-    "🚴‍ ♂️EXCERCISE AND PROPER SLEEP🛌 WILL BOLSTER THE IMMUNE SYSTEM",
-    "🛀 MAINTAIN GOOD HYGIENE HABHITS AT ALL TIMES",
+    "🚴‍ EXCERCISE AND PROPER SLEEP WILL😪 BOLSTER THE IMMUNE SYSTEM",
+    "🔅 MAINTAIN GOOD HYGIENE HABHITS AT ALL TIMES",
     "👬 AVOID CONTACT WITH OTHERS",
     "😷 WEAR A FACE MASK WHEN DEALING WITH INFECTED PATIENT'S",
     "🧻 USE TISSUES WHEN COUGHING OR BLOWING NOSE",
-    "🍎 WASH AND PREPARE FOODS CAREFULLY",
+    "👐 WASH AND PREPARE FOODS CAREFULLY",
     "STAY HOME STAY SAFE",
   )
 
@@ -37,6 +37,8 @@ def covid(bot: Bot, update: Update):
 
   
 __help__ = """
+
+[Pᴏᴡᴇʀᴅ ʙʏ](https://t.me/ReDynamicSupport)
  
  ➥ /covid - Get World Wide Corona Status
  
