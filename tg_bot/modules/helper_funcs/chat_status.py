@@ -124,7 +124,7 @@ def whitelist_plus(func):
         if user and is_whitelist_plus(chat, user.id):
             return func(bot, update, *args, **kwargs)
         else:
-            update.effective_message.reply_text("You cant use it.\nVisit @black_legend_support")
+            update.effective_message.reply_text("You cant use it.\nVisit @ReDynamicSupport")
 
     return is_whitelist_plus_func
 
@@ -289,7 +289,7 @@ def connection_status(func):
             return func(bot, update, *args, **kwargs)
         else:
             if update.effective_message.chat.type == "private":
-                update.effective_message.reply_text("Send /connect in a group that you and I have in common first. Join [this group](t.me/black_legend_support) for any other help", parse_mode=ParseMode.MARKDOWN)
+                update.effective_message.reply_text("Send /connect in a group that you and I have in common first. Join [this group](t.me/ReDynamicSupport) for any other help", parse_mode=ParseMode.MARKDOWN)
                 return connected_status
 
             return func(bot, update, *args, **kwargs)
